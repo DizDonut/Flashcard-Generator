@@ -1,0 +1,22 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "npm modules",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DizDonut/Flashcard-Generator.git"
+  },
+  "author": "Mike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DizDonut/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/DizDonut/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquirer": "^3.2.1"
+  }
+}
