@@ -159,9 +159,8 @@ function runAll(){
         count++;
         runAll();
       })
-      endStudy();
     })
-  }else {
+  } else {
     endStudy();
   }
 }//end runAll function
@@ -196,10 +195,114 @@ function random(){
       }
       random();
     })
-  }else {
+  } else {
     endStudy();
   }
 }//end random function
+
+function runCreate(){
+  inquirer.prompt([
+    {
+      type: "list",
+      message: "What type of card would you like to create?",
+      choices: ["Basic", "Cloze"],
+      name: "type"
+    }
+  ]).then(function(result){
+    var cardType = result.type;
+
+    if(cardType === "Basic"){
+      inquirer.prompt([
+        {
+          type: "input",
+          message: "Enter your question:",
+          name: "front"
+        },
+        {
+          type: "input",
+          message: "Now for the answer...",
+          name: "back"
+        }
+      ]).then(function(cardResult){
+        //create new basic object
+        var cardObj = {
+          type: "BasicCard",
+          front: cardResult.front,
+          back: cardResult.back
+        };
+
+        //push that object to our 'json basic library' array
+        bscLib.push(cardObj);
+
+        //write the new array to the json file
+        fs.writeFile("bsCardLibrary.json", JSON.stringify(bscLib, null, 2))
+
+        //prompt for another card
+        inquirer.prompt([
+          {
+            type: "list",
+            message: "Another card?",
+            choices: ["Yes", "No"],
+            name: "choice"
+          }
+        ]).then(function(response){
+          if (response.choice === "Yes") {
+            runCreate();
+          } else {
+            setTimeout(menu, 1500);
+          }
+        }) //end .then for another card prompt
+      }) //end .then for card choice prompt
+    } else {
+      inquirer.prompt([
+        {
+          type: "input",
+          message: "Enter the full text: ",
+          name: "text"
+        },
+        {
+          type: "input",
+          message: "Enter your cloze statement here: ",
+          name: "cloze"
+        }
+      ]).then(function(clzAns){
+        //create new cloze object
+        var cardObj = {
+          type: "ClozeCard",
+          text: clzAns.text,
+          cloze: clzAns.cloze,
+        };
+
+        //need to test if the cloze statement actually matches something in the
+        //full text.  If so, push to the array, if not, exit to the menu
+        if (cardObj.text.indexOf(cardObj.cloze) !== -1) {
+          //push new close object to the 'json cloze library' array
+          clzLib.push(cardObj);
+          fs.writeFile("clzCardLibrary.json", JSON.stringify(clzLib, null, 2));
+        } else {
+          console.log("Your cloze statement must match some words of the full text");
+          setTimeout(menu, 1500);
+        }
+
+        //prompt for another card
+        inquirer.prompt([
+          {
+            type: "list",
+            message: "Another card?",
+            choices: ["Yes", "No"],
+            name: "choice"
+          }
+        ]).then(function(response){
+          if (response.choice === "Yes") {
+            runCreate();
+          } else {
+            setTimeout(menu, 1500);
+          }
+        }) //end .then for another card prompt
+      }) //end .then for cloze choice
+    } //end else statement for cloze choice
+  }) //end .then to choose between either basic or cloze
+} //end create function
 
 /*
   endStudy functions displays a simple message, resets the count to 0 and

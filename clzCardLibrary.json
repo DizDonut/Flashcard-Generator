@@ -1,52 +1,57 @@
 [
   {
-    "type":   "ClozeCard",
-    "text":   "George Washington was the first president of the United States.",
-    "cloze":  "George Washington"
+    "type": "ClozeCard",
+    "text": "George Washington was the first president of the United States.",
+    "cloze": "George Washington"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "Africa has hosted 0 Olympic Games.",
-    "cloze":  "0"
+    "type": "ClozeCard",
+    "text": "Africa has hosted 0 Olympic Games.",
+    "cloze": "0"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "There are 88 keys in a baby grand piano.",
-    "cloze":  "88"
+    "type": "ClozeCard",
+    "text": "There are 88 keys in a baby grand piano.",
+    "cloze": "88"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "Jacques Cousteau is often referred to as 'the father of scuba diving'.",
-    "cloze":  "Jacques Cousteau"
+    "type": "ClozeCard",
+    "text": "Jacques Cousteau is often referred to as 'the father of scuba diving'.",
+    "cloze": "Jacques Cousteau"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "A baby swan is called a cyngnet.",
-    "cloze":  "cyngnet"
+    "type": "ClozeCard",
+    "text": "A baby swan is called a cyngnet.",
+    "cloze": "cyngnet"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "The geyser known as 'Old Faithful' is found in the Yellowstone National Park.",
-    "cloze":  "Yellowstone National Park"
+    "type": "ClozeCard",
+    "text": "The geyser known as 'Old Faithful' is found in the Yellowstone National Park.",
+    "cloze": "Yellowstone National Park"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "Charles Babbage is credited with inventing the first mechanical computer.",
-    "cloze":  "Charles Babbage"
+    "type": "ClozeCard",
+    "text": "Charles Babbage is credited with inventing the first mechanical computer.",
+    "cloze": "Charles Babbage"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "Origami is known as the art of paper folding.",
-    "cloze":  "Origami"
+    "type": "ClozeCard",
+    "text": "Origami is known as the art of paper folding.",
+    "cloze": "Origami"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "In the John Steinbeck novella 'Of Mice and Men', George murders Lennie.",
-    "cloze":  "Lennie"
+    "type": "ClozeCard",
+    "text": "In the John Steinbeck novella 'Of Mice and Men', George murders Lennie.",
+    "cloze": "Lennie"
   },
   {
-    "type":   "ClozeCard",
-    "text":   "The Speaker of the House is next in line to succeed the President, after the Vice President.",
-    "cloze":  "Speaker of the House"
+    "type": "ClozeCard",
+    "text": "The Speaker of the House is next in line to succeed the President, after the Vice President.",
+    "cloze": "Speaker of the House"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "Mike Bechtel is the best programmer in this course",
+    "cloze": "Mike Bechtel"
   }
 ]

@@ -1,52 +1,52 @@
 [
-    {
-      "type":  "BasicCard",
-      "front": "Who was the first president of the United States?",
-      "back":  "George Washington"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "How many Olympic Games have been hosted in Africa?",
-      "back":  "0"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "How many keys are on most baby grand pianos?",
-      "back":  "88"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "Who is often referred to as 'the father of scuba diving'?",
-      "back":  "Jacques Cousteau"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "What is a baby swan called?",
-      "back":  "Cyngnet"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "In which national park would you find the geyser known as 'Old Faithful'?",
-      "back":  "Yellowstone National Park"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "Who is credited with inventing the first mechanical computer?",
-      "back":  "Charles Babbage"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "The art of paper folding is known as what?",
-      "back":  "Origami"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "What character is murdered by George in the John Steinbeck novella 'Of Mice and Men'?",
-      "back":  "Lennie"
-    },
-    {
-      "type":  "BasicCard",
-      "front": "Who is next in line to succeed the President, after the Vice President?",
-      "back":  "The Speaker of the House"
-    }
+  {
+    "type": "BasicCard",
+    "front": "Who was the first president of the United States?",
+    "back": "George Washington"
+  },
+  {
+    "type": "BasicCard",
+    "front": "How many Olympic Games have been hosted in Africa?",
+    "back": "0"
+  },
+  {
+    "type": "BasicCard",
+    "front": "How many keys are on most baby grand pianos?",
+    "back": "88"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is often referred to as 'the father of scuba diving'?",
+    "back": "Jacques Cousteau"
+  },
+  {
+    "type": "BasicCard",
+    "front": "What is a baby swan called?",
+    "back": "Cyngnet"
+  },
+  {
+    "type": "BasicCard",
+    "front": "In which national park would you find the geyser known as 'Old Faithful'?",
+    "back": "Yellowstone National Park"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is credited with inventing the first mechanical computer?",
+    "back": "Charles Babbage"
+  },
+  {
+    "type": "BasicCard",
+    "front": "The art of paper folding is known as what?",
+    "back": "Origami"
+  },
+  {
+    "type": "BasicCard",
+    "front": "What character is murdered by George in the John Steinbeck novella 'Of Mice and Men'?",
+    "back": "Lennie"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is next in line to succeed the President, after the Vice President?",
+    "back": "The Speaker of the House"
+  }
 ]
